@@ -27,9 +27,9 @@ class CountryResource extends Resource
             Forms\Components\TextInput::make('name')
                 ->required()
                 ->maxLength(255),
-            Forms\Components\Select::make('city_id')
-                ->relationship('city', 'name')
-                ->searchable()
+            // Forms\Components\Select::make('city_id')
+            //     ->relationship('city', 'name')
+            //     ->searchable()
         ]);
     }
 
